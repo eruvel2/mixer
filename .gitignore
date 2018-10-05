@@ -6,4 +6,4 @@ classes/
 .gradle/*
 build/
 **.iml
-gradle/wrapper/*
+**/gradle/wrapper/
