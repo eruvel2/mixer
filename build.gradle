@@ -1,0 +1,21 @@
+group 'com.genesis'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'scala'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.typesafe.akka', name: 'akka-actor_2.12', version: '2.5.9'
+    compile group: 'com.typesafe', name: 'config', version: '1.3.2'
+    compile group: 'com.github.andr83', name: 'scalaconfig_2.12', version: '0.4'
+    compile group: 'org.scalaj', name: 'scalaj-http_2.12', version: '2.3.0'
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.4'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.scalatest', name: 'scalatest_2.12', version: '3.0.5'
+    testCompile group: 'com.typesafe.akka', name: 'akka-testkit_2.12', version: '2.5.9'
+}
